@@ -1,7 +1,3 @@
-<p align="center">    
- <img src="" width=200px height=200px />    
-</p>
-
 <h1 align="center">
 
 Pagination JS pure
