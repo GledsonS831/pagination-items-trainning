@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400, 700, 300);
 
 :root {
-  --black: #130f0d;
-  --primary: hsl(32, 98%, 56%);
+  --black: rgb(255, 255, 255);
+  --primary: hsl(192, 76%, 46%);
   --white: #f0f0f9;
 }
 
@@ -22,14 +22,14 @@ body {
   height: 100vh;
 
   background-color: var(--black);
-  color: var(--white);
+  color:rgba(0, 0, 0,1);
 }
 
 header {
   display: flex;
   justify-content: center;
 
-  background-color: hsl(32, 89%, 8%);
+  background-color: hsl(192, 76%, 46%);
 
   /*         box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2); */
   padding: 16px;
