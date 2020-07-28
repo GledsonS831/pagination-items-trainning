@@ -1,7 +1,11 @@
-const data = Array.from({ length: 100 }).map((_, i) => `Item ${i + 1}`);
-
+const data: Array<string> = Array.from({ length: 100 }).map(
+  (_, i) => `Item ${i + 1}`
+);
+/* interface htmlProps {
+  get(): Document;
+} */
 const html = {
-  get(element) {
+  get(element: string): any {
     return document.querySelector(element);
   },
 };
@@ -30,7 +34,7 @@ const controls = {
       state.page++;
     }
   },
-  goTo(page) {
+  goTo(page: number) {
     if (page < 1) {
       page = 1;
     }
@@ -61,7 +65,7 @@ const controls = {
 };
 
 const list = {
-  create(item) {
+  create(item: string) {
     const div = document.createElement("div");
     div.classList.add("item");
     div.innerHTML = item;
@@ -80,15 +84,15 @@ const list = {
 
 const buttons = {
   element: html.get("#paginate .numbers"),
-  create(number) {
+  create(number: string) {
     const button = document.createElement("div");
     button.innerHTML = number;
 
-    if (state.page == number) {
+    if (state.page === +number) {
       button.classList.add("active");
     }
 
-    button.addEventListener("click", (event) => {
+    button.addEventListener("click", (event: any) => {
       const page = event.target.innerText;
       controls.goTo(page);
       update();
@@ -100,7 +104,7 @@ const buttons = {
     buttons.element.innerHTML = "";
     const { maxLeft, maxRight } = buttons.calculateMaxVisible();
     for (let page = maxLeft; page <= maxRight; page++) {
-      buttons.create(page);
+      buttons.create(page.toString());
     }
   },
   calculateMaxVisible() {
