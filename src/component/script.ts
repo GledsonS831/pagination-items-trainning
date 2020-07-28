@@ -1,9 +1,6 @@
 const data: Array<string> = Array.from({ length: 100 }).map(
   (_, i) => `Item ${i + 1}`
 );
-/* interface htmlProps {
-  get(): Document;
-} */
 const html = {
   get(element: string): any {
     return document.querySelector(element);

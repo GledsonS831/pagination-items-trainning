@@ -1,8 +1,5 @@
 "use strict";
 const data = Array.from({ length: 100 }).map((_, i) => `Item ${i + 1}`);
-/* interface htmlProps {
-  get(): Document;
-} */
 const html = {
     get(element) {
         return document.querySelector(element);
