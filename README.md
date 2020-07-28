@@ -7,7 +7,7 @@ Pagination JS pure
 <p align="center">
 	<p align="center">    
 	 <img src="https://img.shields.io/badge/always-LEARNING-RED.svg"/> 
-   <a target="blank"><img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FGledsonssJ"/></a>   
+   <a target="blank" src="https://twitter.com/GledsonssJ"><img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FGledsonssJ"/></a>   
 	</p>
  </p>
 
